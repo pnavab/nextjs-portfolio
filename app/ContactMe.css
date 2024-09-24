@@ -1,0 +1,69 @@
+
+/* Contact Me CSS */
+a {
+  color: rgb(110, 59, 110);
+}
+
+.gmail {
+  background-image: url(./components/images/gmail.png);
+}
+
+.github {
+  background-image: url(./components/images/github.png);
+}
+
+.linkedin {
+  background-image: url(./components/images/linkedin.png);
+}
+
+.contact-page {
+  font-family: 'VT323', monospace;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  align-items: center;
+  /* scroll-snap-align: start; */
+}
+
+.contact-page-content {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-page-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gmail {
+    background-image: url(./components/images/gmail.png);
+}
+
+.github {
+    background-image: url(./components/images/github.png);
+}
+
+.linkedin {
+    background-image: url(./components/images/linkedin.png);
+}
+
+.social-button {
+    background-position: center;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 4px 20px 4px 20px;
+    border: none;
+    transition: ease-in-out .2s;
+}
+
+.social-button:hover {
+    transform: scale(1.15);
+    margin-top: -10px;
+}

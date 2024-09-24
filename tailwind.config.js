@@ -8,11 +8,26 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gmail': 'url(./components/images/gmail.png)',
+        'linkedin': 'url(./app/components/images/linkedin.png)',
+        'github': 'url(./app/components/images/github.png)',
+      },
+      fontFamily: {
+        'VT323': ['VT323', 'monospace'],
+      },
+      colors: {
+        sand: {
+          light: '#f0f0f0',
+          DEFAULT: '#f0f0f0',
+          dark: 'f0f0f0',
+        }
       },
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      display: ["group-hover"],
+    },
+  },
 }

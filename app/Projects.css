@@ -1,0 +1,109 @@
+.project-card-container {
+    border: 5px ridge #75736f;
+    display: flex;
+    width: 35%;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-right: 15%;
+    margin-left: auto;
+  }
+
+.win-bar {
+    background-color: #c3d2f1;
+    border-bottom: 3px ridge #746f75;
+    text-align: left;
+    width: calc(100% - 2px);
+    height: 26px;
+    color: black;
+}
+
+.win-close-button {
+  background-image: url(./components/images/closeicon.png);
+}
+.win-min-button {
+  background-image: url(./components/images/minimizeicon.png);
+}
+.win-full-button {
+  background-image: url(./components/images/fullviewicon.png);
+}
+.win-upd-button {
+  background-image: url(./components/images/updateicon.png);
+}
+
+.win-close-button, .win-min-button, .win-full-button, .win-upd-button {
+  background-position: center;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 4px 2px 4px 2px;
+  cursor: help;
+}
+
+.win-text {
+  background-color: #7a6573;
+  border: 3px ridge #746f75;
+  color: white;
+  letter-spacing: 2px;
+  width: calc( 100% - 96px );
+  margin: auto;
+  height: 22px;
+  box-sizing: border-box;
+  margin: 2px;
+  float: right;
+  font: normal 15px 'Kosugi';
+  text-align: left;
+  padding-left: 4px;
+  vertical-align: middle;
+  line-height: 18px;
+  text-shadow: 1px 1px black;
+}
+  
+.project-card {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(136, 165, 136);
+}
+
+.project-card-description::-webkit-scrollbar {
+    display:none;
+}
+
+.project-card-image-container {
+    width: 100%;
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card-description {
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-page {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  .project-section {
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  .project-selector {
+    font-size: 1.5rem;
+    width: 15%;
+  }
+  .project-card-container {
+    width: 80%;
+  }
+}
